@@ -1,0 +1,11 @@
+Put your school photo in this folder, e.g.:
+    assets/school/school.jpg
+
+Then open js/config.js and make sure this line points to it:
+    schoolImage: "assets/school/school.jpg",
+
+Tips for best results:
+- Use a wide, high-resolution landscape photo (1920px wide or more).
+- Center the building / main subject - the site crops the photo with
+  object-fit: cover so it always fills the full screen, on any monitor.
+- JPG or PNG both work.
