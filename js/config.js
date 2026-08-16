@@ -22,10 +22,10 @@ const SITE = {
   exhibitionTagline: "Where curiosity takes flight.",
 
   // Edit these any time — they show up in the banner, the info cards and the footer.
-  eventDate: "14 March 2027",          // e.g. "14 March 2027"
+  eventDate: "21 August 2026",          // e.g. "14 March 2027"
   eventDay: "Saturday",                 // e.g. "Saturday"
   eventTime: "9:30 AM – 4:00 PM",
-  eventVenue: "School Auditorium & Science Block",
+  eventVenue: "School Auditorium & Columnn Block",
 
   // ---- SCHOOL PHOTO --------------------------------------------------
   // Put your school photo in  assets/school/school.jpg  (any name works,
