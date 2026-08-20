@@ -14,11 +14,11 @@
    1. SITE SETTINGS  —  names, dates, image paths
    ------------------------------------------------------------------- */
 const SITE = {
-  schoolName: "St. Theresa Matriculation Higher Secondary School",
-  schoolShortName: "St. Theresa MHSS",
+  schoolName: "St.Theresa Matriculation Higher Secondary School",
+  schoolShortName: "St.Theresa MHSS",
   place: "Sendurai, Ariyalur",
 
-  exhibitionName: "LUMEN — Science & Innovation Exhibition",
+  exhibitionName: "Science & Innovation Exhibition",
   exhibitionTagline: "Where curiosity takes flight.",
 
   // Edit these any time — they show up in the banner, the info cards and the footer.
