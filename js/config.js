@@ -132,15 +132,15 @@ const CATEGORIES = [
       { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "Demonstrates the monitoring of carbon dioxide levels and highlights their importance in climate and environmental studies." },
       { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "Demonstrates the basic principle and applications of X-rays for imaging and scientific observation." },
       { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
-      { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "" },
-      { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "" }
+      { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "Presents a model village using technology for efficient water, energy, waste management and public services." },
+      { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "Demonstrates the basic structure and working principle of a microscope for viewing tiny objects." }
     ]
   },
   {
     id: "Elventh  A1",
     label: "11th A1",
     items: [
-      { title: "I/P and O/P devices", students: "GIRLS", grade: "11th A1", image: "assets/images/ip-devices.jpg", description: "" },
+      { title: "Input and Output devices", students: "GIRLS", grade: "11th A1", image: "assets/images/ip-devices.jpg", description: "Demonstrates common input and output devices used to communicate with a computer system." },
       { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "assets/images/robot-model.jpg", description: "" },
       { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "assets/images/hologram.jpg", description: "" },
       { title: "Computer model", students: "BOYS", grade: "11th A1", image: "assets/images/computer.jpg", description: "" },
