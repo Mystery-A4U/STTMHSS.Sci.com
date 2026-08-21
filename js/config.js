@@ -25,7 +25,7 @@ const SITE = {
   eventDate: "22 August 2026",          // e.g. "14 March 2027"
   eventDay: "Saturday",                 // e.g. "Saturday"
   eventTime: "9:30 AM – 4:00 PM",
-  eventVenue: "School Auditorium & Columnn Block",
+  eventVenue: "School Auditorium & Christy Block",
 
   // ---- SCHOOL PHOTO --------------------------------------------------
   // Put your school photo in  assets/school/school.jpg  (any name works,
