@@ -128,24 +128,24 @@ const CATEGORIES = [
     id: "Eleventh B",
     label: "11th B",
     items: [
-      { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "hydraulic-pump.jpg", description: "" },
-      { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "co2.jpg", description: "" },
-      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "x-ray.jpg", description: "" },
-      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "smart-traffic.jpg", description: "" },
-      { title: "Smart village", students: "GIRLS", grade: "11th B", image: "smart-village.jpg", description: "" },
-      { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "microscope.jpg", description: "" }
+      { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "" },
+      { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "" },
+      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "" },
+      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "" },
+      { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "" },
+      { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "" }
     ]
   },
   {
     id: "Elventh  A1",
     label: "11th A1",
     items: [
-      { title: "I/P and O/P devices", students: "GIRLS", grade: "11th A1", image: "ip-devices.jpg", description: "" },
-      { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "robot-model.jpg", description: "" },
-      { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "hologram.jpg", description: "" },
-      { title: "Computer model", students: "BOYS", grade: "11th A1", image: "computer.jpg", description: "" },
-      { title: "Type of network", students: "BOYS", grade: "11th A1", image: "type-net.jpg", description: "" },
-      { title: "Projector model", students: "BOYS", grade: "11th A1", image: "projector.jpg", description: "" }
+      { title: "I/P and O/P devices", students: "GIRLS", grade: "11th A1", image: "assets/images/ip-devices.jpg", description: "" },
+      { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "assets/images/robot-model.jpg", description: "" },
+      { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "assets/images/hologram.jpg", description: "" },
+      { title: "Computer model", students: "BOYS", grade: "11th A1", image: "assets/images/computer.jpg", description: "" },
+      { title: "Type of network", students: "BOYS", grade: "11th A1", image: "assets/images/type-net.jpg", description: "" },
+      { title: "Projector model", students: "BOYS", grade: "11th A1", image: "assets/images/projector.jpg", description: "" }
     ]
   }
 ];
