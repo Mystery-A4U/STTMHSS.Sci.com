@@ -120,15 +120,15 @@ const CATEGORIES = [
       { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." },
       { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "Uses sensors to detect unauthorized entry and activate an alert system." },
       { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "Demonstrates Pascal's law by using fluid pressure to lift a heavy load." },
-      { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "" },
-      { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "assets/images/earthquake.jpg", description: "" }
+      { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "Explains how green plants use sunlight, water and carbon dioxide to produce food and release oxygen." },
+      { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "assets/images/earthquake.jpg", description: "Uses vibration detection to activate an alarm when earthquake-like ground movement is detected." }
     ]
   },
   {
     id: "Eleventh B",
     label: "11th B",
     items: [
-      { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "" },
+      { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "Demonstrates how fluid pressure can be used to transfer force and move liquids or mechanical components." },
       { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "" },
       { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "" },
       { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "" },
