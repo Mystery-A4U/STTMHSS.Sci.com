@@ -117,7 +117,7 @@ const CATEGORIES = [
     id: "environmental",
     label: "11th A",
     items: [
-      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/ir-pollution.jpg", description: "" },
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/air-pollution.jpg", description: "" },
       { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "" },
       { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "" },
       { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "" },
