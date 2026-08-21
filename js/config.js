@@ -82,46 +82,46 @@ const CATEGORIES = [
     id: "physics",
     label: "12th A",
     items: [
-      { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "renewable.jpg", description: "" },
-      { title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: "" },
-      { title: "DNA model", students: "GIRLS", grade: "12th A", image: "dna-model.jpg", description: "" },
-      { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "free-energy.jpg", description: "" }
+      { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "assets/images/renewable.jpg", description: "" },
+      { title: "Gas evolution", students: "BOYS", grade: "12th A", image: "assets/images/gas-evolution.jpg", description: "" },
+      { title: "DNA model", students: "GIRLS", grade: "12th A", image: "assets/images/dna-model.jpg", description: "" },
+      { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "assets/images/free-energy.jpg", description: "" }
      ]
   },
   {
     id: "chemistry",
     label: "12TH B",
     items: [
-      { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "hydro-power.jpg", description: "" },
-      { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "tesla.jpg", description: "" },
-      { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "plastic-electricity.jpg", description: "" }
+      { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "assets/images/hydro-power.jpg", description: "" },
+      { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "assets/images/tesla.jpg", description: "" },
+      { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "assets/images/plastic-electricity.jpg", description: "" }
     ] 
   },
   {
     id: "biology",
     label: "12th C",
     items: [
-      { title: "Foot step generator", students: "BOYS", grade: "12th C", image: "foot-step.jpg", description: "" },
-      { title: "Vande graaff generator", students: "GIRLS", grade: "12th C", image: "vande.jpg", description: "" }
+      { title: "Foot step generator", students: "BOYS", grade: "12th C", image: "assets/images/foot-step.jpg", description: "" },
+      { title: "Vande graaff generator", students: "GIRLS", grade: "12th C", image: "assets/images/vande.jpg", description: "" }
     ]
   },
   {
     id: "computer-maths",
     label: "12th A1",
     items: [
-      { title: "ROBOT", students: "BOYS", grade: "12th A1", image: "robot.jpg", description: "" },
-      { title: "Earthquake alarm", students: "BOYS", grade: "12th A1", image: "earth-alarm.jpg", description: "" }
+      { title: "ROBOT", students: "BOYS", grade: "12th A1", image: "assets/images/robot.jpg", description: "" },
+      { title: "Earthquake alarm", students: "BOYS", grade: "12th A1", image: "assets/images/earth-alarm.jpg", description: "" }
     ]
   },
   {
     id: "environmental",
     label: "11th A",
     items: [
-      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "air-pollution.jpg", description: "" },
-      { title: "Security alarm", students: "BOYS", grade: "11th A", image: "security.jpg", description: "" },
-      { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "hydraulic.jpg", description: "" },
-      { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "photosynthesis.jpg", description: "" },
-      { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "earthquake.jpg", description: "" }
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/ir-pollution.jpg", description: "" },
+      { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "" },
+      { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "" },
+      { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "" },
+      { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "assets/images/earthquake.jpg", description: "" }
     ]
   },
   {
