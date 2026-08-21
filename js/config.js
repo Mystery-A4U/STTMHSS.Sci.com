@@ -144,8 +144,8 @@ const CATEGORIES = [
       { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "assets/images/robot-model.jpg", description: "A working model that demonstrates the basic principles of robotics, movement and automated control." },
       { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "assets/images/hologram.jpg", description: "Demonstrates the optical illusion of a three-dimensional image created using light and reflection." },
       { title: "Computer model", students: "BOYS", grade: "11th A1", image: "assets/images/computer.jpg", description: "Shows the basic components and functions of a computer system." },
-      { title: "Type of network", students: "BOYS", grade: "11th A1", image: "assets/images/type-net.jpg", description: "" },
-      { title: "Projector model", students: "BOYS", grade: "11th A1", image: "assets/images/projector.jpg", description: "" }
+      { title: "Type of network", students: "BOYS", grade: "11th A1", image: "assets/images/type-net.jpg", description: "Explains different computer networks such as LAN, MAN and WAN and how they connect devices." },
+      { title: "Projector model", students: "BOYS", grade: "11th A1", image: "assets/images/projector.jpg", description: "Demonstrates how light and optical components are used to project an enlarged image onto a screen." }
     ]
   }
 ];
