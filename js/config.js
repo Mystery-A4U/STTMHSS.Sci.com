@@ -101,8 +101,8 @@ const CATEGORIES = [
     id: "biology",
     label: "12th C",
     items: [
-      { title: "Foot step generator", students: "BOYS", grade: "12th C", image: "assets/images/foot-step.jpg", description: "" },
-      { title: "Vande graaff generator", students: "GIRLS", grade: "12th C", image: "assets/images/vande.jpg", description: "" }
+      { title: "Foot step generator", students: "BOYS", grade: "12th C", image: "assets/images/foot-step.jpg", description: "Converts the mechanical energy produced by footsteps into electrical energy." },
+      { title: "Vande graaff generator", students: "GIRLS", grade: "12th C", image: "assets/images/vande.jpg", description: "Demonstrates the generation of high-voltage static electricity and its visible effects." }
     ]
   },
   {
