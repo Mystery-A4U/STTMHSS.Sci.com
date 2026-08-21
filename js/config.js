@@ -80,9 +80,9 @@ const SITE = {
 const CATEGORIES = [
   {
     id: "physics",
-    label: "Physics",
+    label: "12th",
     items: [
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
+      { title: "Free Energy-Generator Hydro power plane", students: "12th Girls", grade: "12th A2", image: "", description: "" },
       { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
       { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
     ]
