@@ -82,7 +82,7 @@ const CATEGORIES = [
     id: "physics",
     label: "12th A",
     items: [
-      { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "assets/images/renewable.jpg", description: "" },
+      { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "assets/images/renewable.jpg", description: "Demonstrates how naturally replenished sources such as solar, wind and water can be used to generate clean electricity." },
       { title: "Gas evolution", students: "BOYS", grade: "12th A", image: "assets/images/gas-evolution.jpg", description: "" },
       { title: "DNA model", students: "GIRLS", grade: "12th A", image: "assets/images/dna-model.jpg", description: "" },
       { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "assets/images/free-energy.jpg", description: "" }
