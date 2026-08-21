@@ -22,7 +22,7 @@ const SITE = {
   exhibitionTagline: "Where curiosity takes flight.",
 
   // Edit these any time — they show up in the banner, the info cards and the footer.
-  eventDate: "21 August 2026",          // e.g. "14 March 2027"
+  eventDate: "22 August 2026",          // e.g. "14 March 2027"
   eventDay: "Saturday",                 // e.g. "Saturday"
   eventTime: "9:30 AM – 4:00 PM",
   eventVenue: "School Auditorium & Columnn Block",
@@ -80,46 +80,72 @@ const SITE = {
 const CATEGORIES = [
   {
     id: "physics",
-    label: "12th",
+    label: "12th A",
     items: [
       { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "renewable.jpg", description: "" },
-      {title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: ""}                                
+      {title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: ""}   
+       {title: "DNA model", students: "GIRLS", grade: "12th A", image: "dna-model.jpg", description: ""}
+       {title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "free-energy.jpg", description: ""}
      ]
   },
   {
     id: "chemistry",
-    label: "Chemistry",
+    label: "12TH B",
     items: [
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
-    ]
+      { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "hydro-power.jpg", description: "" },
+      { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "tesla.jpg", description: "" },
+      { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "plastic-electricity.jpg", description: "" }
+    ] 
   },
   {
     id: "biology",
-    label: "Biology",
+    label: "12th C",
     items: [
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
+      { title: "Foot step generator", students: "BOYS", grade: "12th C", image: "foot-step.jpg", description: "" },
+      { title: "Vande graaff generator", students: "GIRLS", grade: "12th C", image: "vande.jpg", description: "" }
     ]
   },
   {
     id: "computer-maths",
-    label: "Computer Science & Mathematics",
+    label: "12th A1",
     items: [
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
+      { title: "ROBOT", students: "BOYS", grade: "12th A1", image: "robot.jpg", description: "" },
+      { title: "Earthquake alarm", students: "BOYS", grade: "12th A1", image: "earth-alarm.jpg", description: "" }
     ]
   },
   {
     id: "environmental",
-    label: "Environmental Science",
+    label: "11th A",
     items: [
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "air-pollution.jpg", description: "" },
+      { title: "Security alarm", students: "BOYS", grade: "11th A", image: "security.jpg", description: "" },
+      { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "hydraulic.jpg", description: "" },
+      { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "photosynthesis.jpg", description: "" },
+      { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "earthquake.jpg", description: "" }
+    ]
+  },
+  {
+    id: "Eleventh B",
+    label: "11th B",
+    items: [
+      { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "hydraulic-pump.jpg", description: "" },
+      { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "co2.jpg", description: "" },
+      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "x-ray.jpg", description: "" },
+      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "smart-traffic.jpg", description: "" },
+      { title: "Smart village", students: "GIRLS", grade: "11th B", image: "smart-village.jpg", description: "" },
+      { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "microscope.jpg", description: "" }
+    ]
+  },
+  {
+    id: "Elventh  A1",
+    label: "11th A1",
+    items: [
+      { title: "I/P and O/P devices", students: "GIRLS", grade: "11th A1", image: "ip-devices.jpg", description: "" },
+      { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "robot-model.jpg", description: "" },
+      { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "hologram.jpg", description: "" },
+      { title: "Computer model", students: "BOYS", grade: "11th A1", image: "computer.jpg", description: "" },
+      { title: "Type of network", students: "BOYS", grade: "11th A1", image: "type-net.jpg", description: "" },
+      { title: "Projector model", students: "BOYS", grade: "11th A1", image: "projector.jpg", description: "" }
     ]
   }
 ];
