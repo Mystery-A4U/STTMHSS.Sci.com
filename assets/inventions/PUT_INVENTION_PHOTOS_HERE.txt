@@ -1,6 +1,0 @@
-Put invention photos in this folder, e.g.:
-    assets/inventions/telephone.jpg
-
-Then point to them from the matching entry's "inventionImage" field
-in js/config.js. Missing photos automatically fall back to a neat
-feather icon placeholder, so nothing breaks if you haven't added one yet.
