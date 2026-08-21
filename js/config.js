@@ -40,7 +40,7 @@ const SITE = {
   schoolLogo: "", // e.g. "assets/school/logo.png"
 
   // ---- CREDITS --------------------------------------------------------
-  creditHandle: "@Mystery_1431",
+  creditHandle: "11th Bio-B Boys",
 };
 
 
@@ -82,10 +82,9 @@ const CATEGORIES = [
     id: "physics",
     label: "12th",
     items: [
-      { title: "Free Energy-Generator Hydro power plane", students: "12th Girls", grade: "12th A2", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" },
-      { title: "EDIT ME — Experiment Title", students: "EDIT ME — Student Name(s)", grade: "EDIT ME — Class & Section", image: "", description: "" }
-    ]
+      { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "renewable.jpg", description: "" },
+      {title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: ""}                                
+     ]
   },
   {
     id: "chemistry",
