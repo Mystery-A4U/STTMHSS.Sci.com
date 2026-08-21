@@ -51,7 +51,7 @@
   document.getElementById("bannerTitle").innerHTML =
     `${SITE.exhibitionName.split("—")[0]}<br><em>${SITE.exhibitionName.split("—")[1] || ""}</em>`;
   document.getElementById("bannerSub").textContent =
-    `${SITE.exhibitionTagline} Hosted by ${SITE.schoolName}, ${SITE.place} — an afternoon of student-built experiments, working models and the inventions that inspired them.`;
+    `${SITE.exhibitionTagline} Hosted by ${SITE.schoolName}, ${SITE.place} — an afternoon of student-built experiments, working models and hands-on discovery.`;
 
   // subtle parallax tilt on the banner photo
   bannerEl.addEventListener("mousemove", (e) => {
@@ -67,8 +67,8 @@
      --------------------------------------------------------------- */
   document.getElementById("aboutLede").innerHTML =
     `${SITE.schoolName} presents <em>${SITE.exhibitionName.split("—")[1] || SITE.exhibitionName}</em> — ` +
-    `a student-led showcase of working models, experiments and research, held alongside a hall of ` +
-    `history's greatest inventions and the people behind them.`;
+    `a student-led showcase of working models, experiments and research, built entirely by our own ` +
+    `students, wing by wing, idea by idea.`;
 
   const infoCards = [
     { k:"Date", v:`${SITE.eventDay}, ${SITE.eventDate}` },
@@ -98,33 +98,40 @@
   `).join("");
 
   /* ---------------------------------------------------------------
-     Inventions & inventors — rendered from CATEGORIES in config.js
+     Student experiments — rendered from CATEGORIES in config.js
      --------------------------------------------------------------- */
   const quillIconSVG = `
     <svg class="quill-icon" viewBox="0 0 120 320"><use href="#feather-shape"></use></svg>
   `;
 
   function card(item){
-    const invInitials = initials(item.inventor);
+    const hasDescription = item.description && item.description.trim().length > 0;
     return `
     <article class="card">
-      <div class="invention-media">
-        <img src="${item.inventionImage}" alt="${item.invention}"
-             onerror="this.closest('.card').classList.add('img-missing-invention')">
+      <div class="experiment-media">
+        <img src="${item.image}" alt="${item.title}"
+             onerror="this.closest('.card').classList.add('img-missing-experiment')">
         <div class="ph">
-          <svg viewBox="0 0 120 320"><use href="#feather-shape"></use></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <circle cx="12" cy="12" r="3.4"/>
+            <path d="M8 5l1.4-2h5.2L16 5"/>
+          </svg>
+          <span>Add Photo</span>
         </div>
-        <span class="year-badge">${item.year}</span>
+        <span class="grade-badge">${item.grade}</span>
       </div>
       <div class="body">
-        <h4 class="invention-name">${item.invention}</h4>
-        <p class="detail">${item.detail}</p>
-        <div class="inventor-row">
-          <span class="inventor-avatar">
-            <img src="${item.inventorImage}" alt="${item.inventor}"
-                 onerror="this.closest('.card').classList.add('img-missing-inventor'); this.parentElement.textContent='${invInitials}'">
+        <h4 class="experiment-name">${item.title}</h4>
+        ${hasDescription ? `<p class="detail">${item.description}</p>` : ""}
+        <div class="student-row">
+          <span class="student-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="8" r="3.4"/>
+              <path d="M4.5 19.5c1.4-3.4 4.2-5.2 7.5-5.2s6.1 1.8 7.5 5.2"/>
+            </svg>
           </span>
-          <span class="inventor-name">${item.inventor}</span>
+          <span class="student-name">${item.students}</span>
         </div>
       </div>
     </article>`;
@@ -135,7 +142,7 @@
       <div class="category-head">
         ${quillIconSVG}
         <h3>${cat.label}</h3>
-        <span class="count">${String(cat.items.length).padStart(2,"0")} Featured</span>
+        <span class="count">${String(cat.items.length).padStart(2,"0")} Projects</span>
       </div>
       <div class="card-grid">
         ${cat.items.map(card).join("")}
