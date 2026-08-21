@@ -93,8 +93,8 @@ const CATEGORIES = [
     label: "12TH B",
     items: [
       { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "assets/images/hydro-power.jpg", description: "Demonstrates how flowing water can drive a turbine and generate electricity using hydropower." },
-      { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "assets/images/tesla.jpg", description: "" },
-      { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "assets/images/plastic-electricity.jpg", description: "" }
+      { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "assets/images/tesla.jpg", description: "Demonstrates wireless transmission and the generation of high-voltage electricity using a Tesla coil." },
+      { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "assets/images/plastic-electricity.jpg", description: "Explores methods of converting waste plastic into useful energy through thermal or other energy-conversion processes." }
     ] 
   },
   {
