@@ -129,9 +129,9 @@ const CATEGORIES = [
     label: "11th B",
     items: [
       { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "Demonstrates how fluid pressure can be used to transfer force and move liquids or mechanical components." },
-      { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "" },
-      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "" },
-      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "" },
+      { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "Demonstrates the monitoring of carbon dioxide levels and highlights their importance in climate and environmental studies." },
+      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "Demonstrates the basic principle and applications of X-rays for imaging and scientific observation." },
+      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
       { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "" },
       { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "" }
     ]
