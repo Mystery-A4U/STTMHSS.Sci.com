@@ -141,9 +141,9 @@ const CATEGORIES = [
     label: "11th A1",
     items: [
       { title: "Input and Output devices", students: "GIRLS", grade: "11th A1", image: "assets/images/ip-devices.jpg", description: "Demonstrates common input and output devices used to communicate with a computer system." },
-      { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "assets/images/robot-model.jpg", description: "" },
-      { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "assets/images/hologram.jpg", description: "" },
-      { title: "Computer model", students: "BOYS", grade: "11th A1", image: "assets/images/computer.jpg", description: "" },
+      { title: "Robot model", students: "GIRLS", grade: "11th A1", image: "assets/images/robot-model.jpg", description: "A working model that demonstrates the basic principles of robotics, movement and automated control." },
+      { title: "Hologram", students: "GIRLS", grade: "11th A1", image: "assets/images/hologram.jpg", description: "Demonstrates the optical illusion of a three-dimensional image created using light and reflection." },
+      { title: "Computer model", students: "BOYS", grade: "11th A1", image: "assets/images/computer.jpg", description: "Shows the basic components and functions of a computer system." },
       { title: "Type of network", students: "BOYS", grade: "11th A1", image: "assets/images/type-net.jpg", description: "" },
       { title: "Projector model", students: "BOYS", grade: "11th A1", image: "assets/images/projector.jpg", description: "" }
     ]
