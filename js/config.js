@@ -109,15 +109,15 @@ const CATEGORIES = [
     id: "computer-maths",
     label: "12th A1",
     items: [
-      { title: "ROBOT", students: "BOYS", grade: "12th A1", image: "assets/images/robot.jpg", description: "" },
-      { title: "Earthquake alarm", students: "BOYS", grade: "12th A1", image: "assets/images/earth-alarm.jpg", description: "" }
+      { title: "ROBOT", students: "BOYS", grade: "12th A1", image: "assets/images/robot.jpg", description: "A programmed robotic model that demonstrates automated movement, sensing and control." },
+      { title: "Earthquake alarm", students: "BOYS", grade: "12th A1", image: "assets/images/earth-alarm.jpg", description: "Detects ground vibrations and activates an alarm to provide an early warning of possible earthquakes." }
     ]
   },
   {
     id: "environmental",
     label: "11th A",
     items: [
-      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/air-pollution.jpg", description: "" },
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." },
       { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "" },
       { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "" },
       { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "" },
