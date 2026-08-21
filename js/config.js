@@ -85,14 +85,14 @@ const CATEGORIES = [
       { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "assets/images/renewable.jpg", description: "Demonstrates how naturally replenished sources such as solar, wind and water can be used to generate clean electricity." },
       { title: "Gas evolution", students: "BOYS", grade: "12th A", image: "assets/images/gas-evolution.jpg", description: "Demonstrates a chemical reaction in which gases are produced and collected for observation." },
       { title: "DNA model", students: "GIRLS", grade: "12th A", image: "assets/images/dna-model.jpg", description: "A model showing the double-helix structure of DNA and its role in storing genetic information." },
-      { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "assets/images/free-energy.jpg", description: "" }
+      { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "assets/images/free-energy.jpg", description: "Demonstrates the generation of electrical energy from an external renewable source such as solar, wind or motion." }
      ]
   },
   {
     id: "chemistry",
     label: "12TH B",
     items: [
-      { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "assets/images/hydro-power.jpg", description: "" },
+      { title: "Free energy generator hydro power plane", students: "GIRLS", grade: "12th B", image: "assets/images/hydro-power.jpg", description: "Demonstrates how flowing water can drive a turbine and generate electricity using hydropower." },
       { title: "Tesla coil electricity producer", students: "GIRLS", grade: "12th B", image: "assets/images/tesla.jpg", description: "" },
       { title: "Plastic waste into electricity", students: "BOYS", grade: "12th B", image: "assets/images/plastic-electricity.jpg", description: "" }
     ] 
