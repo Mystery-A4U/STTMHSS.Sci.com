@@ -83,9 +83,9 @@ const CATEGORIES = [
     label: "12th A",
     items: [
       { title: "Renewable energy", students: "BOYS", grade: "12th A", image: "renewable.jpg", description: "" },
-      {title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: ""}   
-       {title: "DNA model", students: "GIRLS", grade: "12th A", image: "dna-model.jpg", description: ""}
-       {title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "free-energy.jpg", description: ""}
+      { title: "Gas evolution", students: "BOYS", grade: "12th A", image: "gas-evolution.jpg", description: "" },
+      { title: "DNA model", students: "GIRLS", grade: "12th A", image: "dna-model.jpg", description: "" },
+      { title: "Free energy generator", students: "GIRLS", grade: "12th A", image: "free-energy.jpg", description: "" }
      ]
   },
   {
