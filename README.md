@@ -72,6 +72,42 @@ category by copying an existing `{ id, label, items }` block):
 
 ---
 
+## "All Experiments" slideshow
+
+A **Slideshow** section sits between "Experiments" and "Visit" and needs
+no setup at all — it automatically plays through **every experiment**
+already in `CATEGORIES` in `js/config.js`, one at a time, with photo,
+title, students and description. Add, edit or remove an experiment in
+`CATEGORIES` and the slideshow updates on its own; there's nothing extra
+to maintain. Visitors can also click the arrows/dots to browse manually,
+and it pauses automatically while the mouse is hovering over it.
+
+## Celebration section
+
+A **Celebration** section (`#celebration`) shows off award/prize/highlight
+photos in the same slideshow style. To add your own:
+
+1. Create the folder `assets/celebration/` and drop your photos in, e.g.
+   `assets/celebration/award-1.jpg`.
+2. Open `js/config.js` and edit the **`CELEBRATIONS`** array near the top
+   — each entry is:
+   ```js
+   {
+     image: "assets/celebration/award-1.jpg",
+     caption: "Best Overall Project — awarded to 12th A",
+     date: "22 August 2026"   // optional
+   }
+   ```
+3. Add as many entries as you like, in any order — reorder the array to
+   change the play order.
+
+Just like the experiment cards, any entry with a missing or empty
+`image` shows a graceful "Add Photo" placeholder instead of a broken
+image. Leave the `CELEBRATIONS` array empty (`[]`) and the section shows
+a friendly "nothing here yet" message instead of an empty slideshow.
+
+---
+
 ## Running it locally
 This is a plain HTML/CSS/JS site — no build step. Just open
 `index.html` in a browser, or serve the folder:
