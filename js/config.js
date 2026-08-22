@@ -117,7 +117,7 @@ const CATEGORIES = [
     id: "environmental",
     label: "11th A",
     items: [
-      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "aassets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." },
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "assets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." },
       { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "Uses sensors to detect unauthorized entry and activate an alert system." },
       { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "Demonstrates Pascal's law by using fluid pressure to lift a heavy load." },
       { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "Explains how green plants use sunlight, water and carbon dioxide to produce food and release oxygen." },
@@ -131,7 +131,7 @@ const CATEGORIES = [
       { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "Demonstrates how fluid pressure can be used to transfer force and move liquids or mechanical components." },
       { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "Demonstrates the monitoring of carbon dioxide levels and highlights their importance in climate and environmental studies." },
       { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "Demonstrates the basic principle and applications of X-rays for imaging and scientific observation." },
-      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/x-ray.jpg, description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
+      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
       { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "Presents a model village using technology for efficient water, energy, waste management and public services." },
       { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "Demonstrates the basic structure and working principle of a microscope for viewing tiny objects." }
     ]
