@@ -130,8 +130,8 @@ const CATEGORIES = [
     items: [
       { title: "Hydraulic pump", students: "BOYS", grade: "11th B", image: "assets/images/hydraulic-pump.jpg", description: "Demonstrates how fluid pressure can be used to transfer force and move liquids or mechanical components." },
       { title: "Carbon observer", students: "BOYS", grade: "11th B", image: "assets/images/co2.jpg", description: "Demonstrates the monitoring of carbon dioxide levels and highlights their importance in climate and environmental studies." },
-      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/x-ray.jpg", description: "Demonstrates the basic principle and applications of X-rays for imaging and scientific observation." },
-      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
+      { title: "Smart traffic management", students: "BOYS", grade: "11th B", image: "assets/images/smart-traffic.jpg", description: "Demonstrates the basic principle and applications of X-rays for imaging and scientific observation." },
+      { title: "Xray producion model", students: "GIRLS", grade: "11th B", image: "assets/images/x-ray.jpg, description: "Uses automated sensing and control to improve traffic flow and reduce congestion." },
       { title: "Smart village", students: "GIRLS", grade: "11th B", image: "assets/images/smart-village.jpg", description: "Presents a model village using technology for efficient water, energy, waste management and public services." },
       { title: "Microscopic model", students: "GIRLS", grade: "11th B", image: "assets/images/microscope.jpg", description: "Demonstrates the basic structure and working principle of a microscope for viewing tiny objects." }
     ]
