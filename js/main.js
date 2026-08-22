@@ -151,6 +151,124 @@
   `).join("");
 
   /* ---------------------------------------------------------------
+     Slideshow player — a small reusable component used by both the
+     "All Experiments" slideshow and the "Celebrated Moments" slideshow
+     below. Give it a container + an array of { image, title, sub,
+     meta, caption } slides and it wires up autoplay, arrows and dots.
+     --------------------------------------------------------------- */
+  const placeholderSVG = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <circle cx="12" cy="12" r="3.4"/>
+      <path d="M8 5l1.4-2h5.2L16 5"/>
+    </svg>
+  `;
+
+  function buildSlideshow(container, slides, opts){
+    if(!container) return;
+    opts = opts || {};
+
+    if(!slides.length){
+      container.innerHTML = `
+        <div class="slideplayer-empty">
+          ${placeholderSVG}
+          <span>${opts.emptyText || "Nothing to show here yet."}</span>
+        </div>`;
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="slideplayer-stage">
+        ${slides.map((s, i) => `
+          <div class="slide${i === 0 ? " active" : ""}" data-index="${i}">
+            <img src="${s.image}" alt="${s.title || ""}"
+                 onerror="this.closest('.slide').classList.add('img-missing')">
+            <div class="slide-ph">
+              ${placeholderSVG}
+              <span>Add Photo</span>
+            </div>
+            <div class="slide-scrim"></div>
+            <div class="slide-info">
+              ${s.meta ? `<span class="slide-meta">${s.meta}</span>` : ""}
+              ${s.title ? `<h4>${s.title}</h4>` : ""}
+              ${s.sub ? `<span class="slide-sub">${s.sub}</span>` : ""}
+              ${s.caption ? `<p class="slide-caption">${s.caption}</p>` : ""}
+            </div>
+          </div>
+        `).join("")}
+      </div>
+      <div class="slideplayer-controls">
+        <button class="sp-arrow prev" aria-label="Previous slide">‹</button>
+        <div class="sp-dots">
+          ${slides.map((_, i) => `<button class="sp-dot${i === 0 ? " active" : ""}" data-index="${i}" aria-label="Go to slide ${i + 1}"></button>`).join("")}
+        </div>
+        <button class="sp-arrow next" aria-label="Next slide">›</button>
+      </div>
+    `;
+
+    const slideEls = Array.from(container.querySelectorAll(".slide"));
+    const dotEls = Array.from(container.querySelectorAll(".sp-dot"));
+    const autoplayMs = opts.autoplay || 4500;
+    let current = 0;
+    let timer = null;
+
+    function goTo(i){
+      current = (i + slides.length) % slides.length;
+      slideEls.forEach((el, idx) => el.classList.toggle("active", idx === current));
+      dotEls.forEach((el, idx) => el.classList.toggle("active", idx === current));
+    }
+    function next(){ goTo(current + 1); }
+    function prev(){ goTo(current - 1); }
+
+    function startAutoplay(){
+      stopAutoplay();
+      if(slides.length < 2) return;
+      timer = setInterval(next, autoplayMs);
+    }
+    function stopAutoplay(){
+      if(timer) clearInterval(timer);
+      timer = null;
+    }
+
+    container.querySelector(".prev").addEventListener("click", () => { prev(); startAutoplay(); });
+    container.querySelector(".next").addEventListener("click", () => { next(); startAutoplay(); });
+    dotEls.forEach(dot => dot.addEventListener("click", () => { goTo(+dot.dataset.index); startAutoplay(); }));
+
+    container.addEventListener("mouseenter", stopAutoplay);
+    container.addEventListener("mouseleave", startAutoplay);
+
+    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+      startAutoplay();
+    }
+  }
+
+  // "All Experiments" slideshow — automatically built from every item
+  // across every category in CATEGORIES. Add/edit experiments in
+  // config.js and they show up here with no other changes needed.
+  const experimentSlides = CATEGORIES.flatMap(cat => cat.items.map(item => ({
+    image: item.image,
+    title: item.title,
+    sub: item.students,
+    meta: item.grade,
+    caption: item.description
+  })));
+  buildSlideshow(document.getElementById("expSlideshow"), experimentSlides, {
+    autoplay: 4500,
+    emptyText: "Add experiments in js/config.js to see them here."
+  });
+
+  // "Celebrated Moments" slideshow — built from CELEBRATIONS in config.js.
+  const celebrationSlides = (typeof CELEBRATIONS !== "undefined" ? CELEBRATIONS : []).map(c => ({
+    image: c.image,
+    title: c.caption,
+    meta: c.date
+  }));
+  buildSlideshow(document.getElementById("celebSlideshow"), celebrationSlides, {
+    autoplay: 4000,
+    emptyText: "Add photos to assets/celebration and list them in js/config.js to see them here."
+  });
+
+  /* ---------------------------------------------------------------
      Nav background on scroll + reveal-on-scroll
      --------------------------------------------------------------- */
   const topnav = document.getElementById("topnav");

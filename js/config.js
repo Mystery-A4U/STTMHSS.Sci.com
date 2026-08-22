@@ -77,6 +77,43 @@ const SITE = {
      }
 */
 
+/* ----------------------------------------------------------------------
+   3. CELEBRATED MOMENTS  —  the Celebration slideshow
+   ------------------------------------------------------------------- */
+/*
+   HOW TO ADD YOUR OWN
+   --------------------
+   - Add a new object to the array below for every photo you want in the
+     Celebration slideshow.
+   - `image`   → path to the photo
+   - `caption` → what's happening in the photo (shows under it)
+   - `date`    → optional small label, e.g. a date or an award name
+
+   IMAGES: leave `image: ""` (or point to a file that doesn't exist yet)
+   and that slide will show a clean "Add Photo" placeholder instead of a
+   broken image — nothing ever looks broken while you're still collecting
+   photos.
+
+   Suggested folder (create this yourself next to assets/experiments/):
+     assets/celebration/   →  put celebration photos here
+
+   Example:
+     {
+       image: "assets/celebration/best-project-award.jpg",
+       caption: "Best Overall Project — awarded to 12th A",
+       date: "22 August 2026"
+     }
+
+   The Celebration section is skipped gracefully with a friendly message
+   if this array is left empty.
+*/
+const CELEBRATIONS = [
+  { image: "assets/celebration/award-1.jpg", caption: "EDIT ME — e.g. Best Overall Project", date: "EDIT ME — e.g. 22 August 2026" },
+  { image: "assets/celebration/award-2.jpg", caption: "EDIT ME — e.g. Winning team celebrating", date: "" },
+  { image: "assets/celebration/award-3.jpg", caption: "EDIT ME — e.g. Principal presenting the trophy", date: "" }
+];
+
+
 const CATEGORIES = [
   {
     id: "physics",
