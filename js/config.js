@@ -40,7 +40,7 @@ const SITE = {
   schoolLogo: "", // e.g. "assets/school/logo.png"
 
   // ---- CREDITS --------------------------------------------------------
-  creditHandle: "11th Bio-B Boys",
+  creditHandle: "DESIGNED BY VIMAL & PRESENTED BY 11th Bio-B Boys",
 };
 
 
@@ -108,9 +108,9 @@ const SITE = {
    if this array is left empty.
 */
 const CELEBRATIONS = [
-  { image: "assets/celebration/award-1.jpg", caption: "EDIT ME — e.g. Best Overall Project", date: "EDIT ME — e.g. 22 August 2026" },
-  { image: "assets/celebration/award-2.jpg", caption: "EDIT ME — e.g. Winning team celebrating", date: "" },
-  { image: "assets/celebration/award-3.jpg", caption: "EDIT ME — e.g. Principal presenting the trophy", date: "" }
+  { image: "assets/celebration/image1.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image2.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image3.jpg", caption: "", date: "22 August 2026" }
 ];
 
 
