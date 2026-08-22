@@ -110,7 +110,12 @@ const SITE = {
 const CELEBRATIONS = [
   { image: "assets/celebration/image1.jpg", caption: "", date: "22 August 2026" },
   { image: "assets/celebration/image2.jpg", caption: "", date: "22 August 2026" },
-  { image: "assets/celebration/image3.jpg", caption: "", date: "22 August 2026" }
+  { image: "assets/celebration/image3.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image4.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image5.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image6.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image7.jpg", caption: "", date: "22 August 2026" },
+  { image: "assets/celebration/image8.jpg", caption: "", date: "22 August 2026" }
 ];
 
 
