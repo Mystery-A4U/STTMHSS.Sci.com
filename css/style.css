@@ -560,6 +560,114 @@ section{ position:relative; padding:120px 0; }
 .student-icon svg{ width:18px; height:18px; }
 .student-name{ font-family:var(--f-mono); font-size:.76rem; letter-spacing:.02em; color:rgba(248,241,226,.85); }
 
+/* ---- slideshow (shared component: "All Experiments" + "Celebrated Moments") ---- */
+.slideshow{ background:var(--navy-900); border-top:1px solid var(--line); }
+.celebration{ background:var(--navy-950); border-top:1px solid var(--line); }
+
+.slideplayer-stage{
+  position:relative;
+  height:520px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--navy-800);
+}
+.slide{
+  position:absolute; inset:0;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 1s var(--ease-in-out-soft);
+}
+.slide.active{ opacity:1; pointer-events:auto; z-index:2; }
+.slide img{
+  width:100%; height:100%; object-fit:cover;
+  transform:scale(1);
+  transition:transform 7s linear;
+}
+.slide.active img{ transform:scale(1.08); }
+
+.slide .slide-ph{
+  position:absolute; inset:0;
+  display:none;
+  flex-direction:column;
+  gap:12px;
+  align-items:center; justify-content:center;
+  background:
+    repeating-linear-gradient(135deg, rgba(233,196,115,.05) 0 2px, transparent 2px 14px),
+    linear-gradient(150deg, var(--navy-600), var(--navy-800));
+}
+.slide.img-missing img{ display:none; }
+.slide.img-missing .slide-ph{ display:flex; }
+.slide .slide-ph svg{ width:38px; height:38px; color:rgba(233,196,115,.5); }
+.slide .slide-ph span{
+  font-family:var(--f-mono); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(233,196,115,.5);
+}
+
+.slide-scrim{
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, transparent 35%, rgba(5,7,15,.9) 100%);
+}
+.slide-info{
+  position:absolute; left:0; right:0; bottom:0; z-index:3;
+  padding:40px 48px;
+  max-width:760px;
+}
+.slide-meta{
+  font-family:var(--f-mono); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold-400);
+}
+.slide-info h4{ margin-top:10px; font-size:1.7rem; color:var(--cream-050); line-height:1.25; }
+.slide-sub{
+  display:block; margin-top:8px;
+  font-family:var(--f-mono); font-size:.8rem; letter-spacing:.03em; color:rgba(248,241,226,.75);
+}
+.slide-caption{ margin-top:12px; font-size:.94rem; line-height:1.55; color:rgba(248,241,226,.68); }
+
+.slideplayer-controls{
+  display:flex; align-items:center; justify-content:center; gap:26px;
+  margin-top:28px;
+}
+.sp-arrow{
+  flex:none;
+  width:46px; height:46px;
+  border-radius:50%;
+  border:1px solid rgba(233,196,115,.4);
+  background:rgba(233,196,115,.05);
+  color:var(--gold-300);
+  font-size:1.5rem;
+  line-height:1;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:transform .3s var(--ease-out-soft), border-color .3s, background .3s;
+}
+.sp-arrow:hover{ transform:translateY(-2px); border-color:var(--gold-400); background:rgba(233,196,115,.12); }
+
+.sp-dots{ display:flex; align-items:center; gap:9px; }
+.sp-dot{
+  width:8px; height:8px;
+  padding:0; border:none; border-radius:999px;
+  background:rgba(233,196,115,.25);
+  cursor:pointer;
+  transition:width .35s var(--ease-out-soft), background .35s;
+}
+.sp-dot.active{ width:26px; background:var(--gold-400); }
+
+.slideplayer-empty{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:14px;
+  padding:80px 24px;
+  border:1px dashed rgba(233,196,115,.28);
+  border-radius:var(--radius);
+  background:
+    repeating-linear-gradient(135deg, rgba(233,196,115,.04) 0 2px, transparent 2px 14px),
+    var(--navy-800);
+  color:rgba(233,196,115,.55);
+  text-align:center;
+}
+.slideplayer-empty svg{ width:34px; height:34px; }
+.slideplayer-empty span{ font-family:var(--f-mono); font-size:.78rem; letter-spacing:.04em; max-width:420px; }
+
 /* ---- visit ---- */
 .visit{ background:var(--navy-900); border-top:1px solid var(--line); }
 .visit .grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; }
@@ -622,6 +730,8 @@ footer .bottom .credit a{ border-bottom:1px dotted rgba(233,196,115,.5); }
 
 .about{ background:rgba(11,18,32,.93); }
 .inventions{ background:rgba(5,7,15,.94); }
+.slideshow{ background:rgba(11,18,32,.93); }
+.celebration{ background:rgba(5,7,15,.94); }
 .visit{ background:rgba(11,18,32,.93); }
 footer{ background:rgba(5,7,15,.95); }
 
