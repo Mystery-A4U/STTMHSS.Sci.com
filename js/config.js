@@ -117,8 +117,7 @@ const CATEGORIES = [
     id: "environmental",
     label: "11th A",
     items: [
-      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "assets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." },
-      { title: "Security alarm", students: "BOYS", grade: "11th A", image: "assets/images/security.jpg", description: "Uses sensors to detect unauthorized entry and activate an alert system." },
+      { title: "Air pollution control", students: "BOYS", grade: "11th A", image: "assets/images/air-pollution.jpg", description: "Demonstrates methods for reducing harmful pollutants and improving air quality." 
       { title: "Hydraulic lift", students: "GIRLS", grade: "11th A", image: "assets/images/hydraulic.jpg", description: "Demonstrates Pascal's law by using fluid pressure to lift a heavy load." },
       { title: "Photosynthesis model", students: "GIRLS", grade: "11th A", image: "assets/images/photosynthesis.jpg", description: "Explains how green plants use sunlight, water and carbon dioxide to produce food and release oxygen." },
       { title: "Earthquake alarm", students: "GIRLS", grade: "11th A", image: "assets/images/earthquake.jpg", description: "Uses vibration detection to activate an alarm when earthquake-like ground movement is detected." }
